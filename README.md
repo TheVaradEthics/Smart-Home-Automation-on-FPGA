@@ -1,14 +1,5 @@
-Here is the complete, professional `README.md` file designed to make your repository stand out to recruiters and professors.
 
-You can copy everything inside the code block below and paste it directly into the `README.md` file in the root of your VS Code workspace.
-
-```markdown
-# 🏠 Smart Home Automation Controller on FPGA
-
-![Language](https://img.shields.io/badge/Language-Verilog-blue)
-![Simulation](https://img.shields.io/badge/Simulation-Icarus_Verilog-green)
-![Synthesis](https://img.shields.io/badge/Synthesis-Yosys-orange)
-![Status](https://img.shields.io/badge/Status-Simulation_Ready-success)
+## 🏠 Smart Home Automation Controller on FPGA
 
 ## 📌 Overview
 This project implements a parameterizable home-automation controller on an FPGA that manages lighting (PWM dimming), fans (PWM speed), sockets (relays), sensors (PIR, LDR), scene presets, and safety alarms. It is designed with deterministic, low-latency control suitable for smart homes and building automation. 
@@ -87,19 +78,9 @@ gtkwave waveforms/home.vcd
 ```
 
 
-
-## 📊 Simulation Results & Proof of Work
-
-*(Add your GTKWave screenshots here to show the FSM correctly switching priorities during the testbench execution)*
-
-> *Above: GTKWave output proving the successful trigger of the priority alarm override, dropping all relay outputs safely to zero.*
-
 ## 🔮 Future Improvements
 
 * Integration of a zero-cross AC dimming module with triac drivers.
 * I²C master and SPI ADC for clean analog sensor inputs.
 * Formal verification (using SymbiYosys) to mathematically prove the safety interlocks.
 
-```
-
-```
