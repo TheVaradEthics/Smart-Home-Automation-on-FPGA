@@ -1,0 +1,62 @@
+
+# ------------------------------------------
+# Icarus Verilog & GTKWave (Simulation)
+# ------------------------------------------
+*.vvp
+*.vcd
+*.gtkw
+*.lxt
+*.lxt2
+*.fst
+
+# ------------------------------------------
+# Yosys (Synthesis)
+# ------------------------------------------
+*.edif
+*.json
+*.blif
+# Ignore build directory contents if used for Yosys outputs
+build/
+
+# ------------------------------------------
+# Xilinx Vivado (Hardware Implementation)
+# ------------------------------------------
+*.jou
+*.log
+*.str
+*.wdb
+*.hw/
+*.sim/
+*.runs/
+*.cache/
+*.ip_user_files/
+.Xil/
+*.bit
+*.bin
+*.mmi
+*.ltx
+
+# ------------------------------------------
+# ModelSim / Questa (Alternative Simulation)
+# ------------------------------------------
+work/
+transcript
+*.wlf
+modelsim.ini
+
+# ------------------------------------------
+# VS Code & OS Files
+# ------------------------------------------
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# ------------------------------------------
+# Keep Empty Directories Intact
+# (Optional: uncomment if you want Git to track these empty folders before you add files)
+# ------------------------------------------
+# !reports/.gitkeep
+# !waveforms/.gitkeep
+# !simulation/.gitkeep

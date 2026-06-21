@@ -1,0 +1,6 @@
+# scripts/synth.ys
+read_verilog src/clk_en.v src/debounce.v src/pwm8.v src/scenes.v src/ctrl_fsm.v src/top.v
+hierarchy -top top
+synth_xilinx -flatten -top top
+stat
+write_json build/home.json
